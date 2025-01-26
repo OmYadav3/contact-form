@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", serif;
+    background-color: hsl(148, 38%, 91%);
+    
+}
+
+.form {
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 2.5rem 20rem 1rem 20rem;
+    padding: 2rem;
+}
+
+.form__heading{
+    font-size: xx-large;
+}
+
+label{
+    font-size: 16px;
+}
+
+.input-contact-form{
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px 0px 8px 0px;
+    border-radius: 6px;
+    width: 100%;
+    border:1px solid gray;
+}
+
+.form__input_name_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* width: 50.8rem;  */
+    margin-bottom: 8px;
+}
+
+.form__input_name_container--border{
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.form__input_name_container-flex{
+    width: 100%;
+}
+
+.form__email_container{
+    margin-bottom: 8px;
+}
+
+.form__message_textarea{
+    width: 100%;
+    margin-top: 8px;
+}
+
+.form__message_textarea_field{
+    max-width: 48rem;
+    min-width: 100%;
+    max-height: 8rem;
+    min-height: 8rem;
+    padding: 4px;
+    font-family: "Karla", serif;
+    font-size: 16px;
+
+}
+
+.form__checkbox{
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.form__checkbox_input{
+    transform: scale(1.5);
+    margin-left: 2px;
+}
+
+.form__submit{
+    width: 100%;
+    padding: 0.8rem 0rem 0.8rem 0rem;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    font-family: "Karla", serif;
+    border-radius: 4px;
+    border: none;
+}
+
+
+@media (max-width: 1250px) {
+    .form{
+        margin: 2.5rem 12rem 1rem 12rem;
+        padding: 1.5rem;
+    }
+    .form__input_name_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}   
+@media (max-width: 920px) {
+    .form{
+        margin: 1.5rem 10rem 1rem 10rem;
+        padding: 1.5rem;
+    }
+    .form__input_name_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
+@media (max-width: 720px) {
+    .form{
+        margin: 1.5rem 6.5rem 1rem 6.5rem;
+        padding: 1.5rem;
+    }
+    .form__input_name_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
+@media (max-width: 670px) {
+    .form{
+        margin: 0;
+        padding: 1.5rem;
+    }
+    .form__input_name_container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
