@@ -1,106 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/stylesheet.css" />
-    <title>Contact form</title>
-    
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-    
-  </head>
-  
-  <body>
-    <section>
-      <form class="form">
-        <h1 class="form__heading">Contact Us</h1>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/stylesheet.css" />
+  <title>Contact form</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <form class="form">
+      <h1 class="form__heading">Contact Us</h1>
+      <div class="form__input_name_container">
+        <div class="form__input_name_container-flex">
+          <label for=""> First Name</label>
+          <input id="name_input" class="input-contact-form input-hover" type="text" />
+          <div class="form__requiredField">This field is required</div>
+        </div>
+        <div class="form__input_name_container-flex">
+          <label for=""> Last Name</label>
+          <input id="lastname_input" class="input-contact-form input-hover" type="text" />
+          <div class="form__requiredField">This field is required</div>
+
+        </div>
+      </div>
+      <div class="form__email_container">
+        <label id="emailAddress">Email Address</label>
+        <input class="input-contact-form input-hover" type="email" name="email" id="emailInput" />
+        <div class="form__requiredField">This field is required</div>
+
+      </div>
+      <div class="">
+        <div id="queryType">Query Type</div>
         <div class="form__input_name_container">
-          <div class="form__input_name_container-flex">
-            <label for=""> First Name</label>
-            <input
-            id="name_input"
-            class="input-contact-form input-hover"
-            type="text"
-            />
+          <div class="form__input_name_container--border input-hover">
+            <input class="input-hover" type="radio" />
+            <label id="general_Enquiry">General Enquiry</label>
+            <!-- <div class="form__requiredField">This field is required</div> -->
           </div>
-          <div class="form__input_name_container-flex">
-            <label for=""> Last Name</label>
-            <input
-            id="lastname_input"
-            class="input-contact-form input-hover"
-            type="text"
-            />
+          <div class="form__input_name_container--border input-hover">
+            <input class="input-hover" type="radio" />
+            <label id="support_Request">Support Request</label>
           </div>
         </div>
-        <div class="form__email_container">
-          <label for="">Email Address</label>
-          <input
-          class="input-contact-form input-hover"
-          type="email"
-          name="email"
-          id=""
-          />
+        <div class="form__requiredField">This field is required</div>
+      </div>
+      <div>
+        <label id="message">Message</label>
+        <div class="form__message_textarea">
+          <textarea name="textArea" id="" class="form__message_textarea_field"></textarea>
+          <div class="form__requiredField">This field is required</div>
+
         </div>
-        <div class="">
-          <div>Query Type</div>
-          <div class="form__input_name_container">
-            <div class="form__input_name_container--border input-hover">
-              <input class="input-hover" type="radio" />
-              <label for="">General Enquiry</label>
-            </div>
-            <div class="form__input_name_container--border input-hover">
-              <input class="input-hover" type="radio" />
-              <label for="">Support Request</label>
-            </div>
-          </div>
-        </div>
-        <div>
-          <label for="">Message</label>
-          <div class="form__message_textarea">
-            <textarea
-            name=""
-            id=""
-            class="form__message_textarea_field"
-            ></textarea>
-          </div>
-        </div>
-        <div class="form__checkbox">
-          <input type="checkbox" class="form__checkbox_input" />
-          <div>I consent to being contacted by the team</div>
-        </div>
-        <div class="">
-          <button id='submit' class="form__submit" type="submit">Submit</button>
-        </div>
-      </form>
-    </section>
-    
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Om Yadav</a>.
-    </div>
-    <script src="/script.js"></script>
-  </body>
+      </div>
+      <div class="form__checkbox">
+        <input type="checkbox" class="form__checkbox_input" />
+        <div>I consent to being contacted by the team</div>
+      </div>
+      <div class="">
+        <button id='submit' class="form__submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Om Yadav</a>.
+  </div>
+  <script src="/script.js"></script>
+</body>
+
 </html>
 
 <!-- To submit this form, please consent to being contacted
