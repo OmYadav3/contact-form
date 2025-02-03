@@ -51,6 +51,7 @@ Users should be able to:
 ### What I learned
 - New CSS animations
 - how to verify the email
+- EventListener properties
 
 ## Author
 
